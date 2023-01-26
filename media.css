@@ -1,0 +1,166 @@
+/* Big tablet to 1200px (widths smaller than the 1140px row)*/
+@media only screen and (max-width: 1200px) {
+}
+
+/* Small tablet to big tablet : from 768 to 1023px*/
+@media only screen and (max-width: 1023px) {
+    * {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 20px;
+        padding: 30px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    section {
+        padding: 30px 0;
+    }
+    /* <--------------> */
+    /* Header */
+    /* <--------------> */
+    .nav_name {
+        font-size: 16px;
+    }
+    .btn {
+        padding: 10px;
+        border-radius: 50px;
+    }
+    /* < ----------------------- > */
+    /* Recent Work*/
+    /* < ----------------------- > */
+    .project {
+        width: 380px;
+        height: 250px;
+    }
+    .or {
+        font-size: 50px;
+    }
+}
+/* Small phones to small tablets from: 418px to 768px*/
+@media only screen and (max-width: 767px) {
+    .modal {
+        width: 99%;
+        height: 200px;
+    }
+    .menu-icon {
+        display: block;
+    }
+    #check:checked ~ .right {
+        right: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    .right {
+        flex-direction: column;
+        height: 100vh;
+        position: fixed;
+        width: 15rem;
+        justify-content: space-around;
+        top: 2rem;
+        right: -100%;
+        z-index: 999;
+        transition: all 0.5s ease-in-out;
+        background: rgba(8, 8, 8, 0.385);
+    }
+
+    .nav_menu ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+    .nav_menu ul li a {
+        font-size: 30px;
+    }
+    .btn {
+        padding: 15px;
+        border-radius: 50px;
+    }
+    .btn_nav_resume a {
+        color: white;
+        text-decoration: none;
+    }
+    .project {
+        width: 450px;
+        height: 250px;
+    }
+    /* < ---------------------- > */
+    /* < ----- Tech Stack ----- > */
+    /* < ---------------------- > */
+    .programming_language_box {
+        height: 60vh;
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .programming_language_image {
+        height: 100px;
+        width: 100px;
+    }
+    .get_in_touch_social {
+        width: 80px;
+    }
+    .get_in_touch_email {
+        width: 90%;
+        padding: 15px;
+    }
+    .arrow {
+        font-size: 30px;
+    }
+    footer {
+        min-height: 40vh;
+        padding: 10px;
+        background-color: rgb(60, 56, 56);
+        /* align-items: center; */
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .link ul,
+    .social ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .link ul li,
+    .social ul li {
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .modal {
+        height: 250px;
+    }
+    .modal-close {
+        top: 1%;
+        right: 4%;
+    }
+    .modal-close {
+        font-size: 1.1rem;
+    }
+}
+
+/* Small phones to small tablets from: 0 to  418px*/
+@media only screen and (max-width: 418px) {
+    * {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 20px;
+        padding: 25px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    section {
+        padding: 25px 0;
+    }
+}

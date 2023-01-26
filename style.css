@@ -1,0 +1,355 @@
+* {
+    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    box-sizing: inherit;
+    background-color: #181818;
+    color: #dfdfde;
+    font-size: 19px;
+    font-weight: 200;
+    scroll-behavior: smooth;
+}
+section {
+    padding: 40px 0;
+}
+
+/* darktheme */
+.darkTheme {
+    color: #181818;
+}
+.whiteTheme {
+    color: #dfdfde;
+}
+/* < ------------------ > */
+/* < ----- Header ----- > */
+/* < ------------------ > */
+.header {
+    box-sizing: inherit;
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    color: #dfdfde;
+    cursor: pointer;
+    height: 4vh;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon,
+#check {
+    display: none;
+}
+
+.nav_name {
+    /* width: 30%; */
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.nav_name:hover {
+    border-bottom: 2px solid #da0037;
+    border-width: 100%;
+    transition: all 0.5s;
+}
+.toogle_btn {
+    height: 50px;
+    width: 100px;
+    color: black;
+}
+
+.right {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_menu ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav_menu ul li a,
+.link ul li a {
+    color: #dfdfde;
+    text-decoration: none;
+}
+.nav_menu ul li a:hover {
+    color: #da0037;
+    transition: all 0.3s;
+}
+.nav_menu ul li {
+    margin-left: 20px;
+}
+.btn {
+    box-sizing: inherit;
+    background-color: #da0037;
+    padding: 15px;
+    border-radius: 50px;
+}
+.btn_nav_resume a {
+    color: white;
+    text-decoration: none;
+}
+.btn_nav_resume a:hover {
+    color: black;
+    transition: all 0.1s;
+}
+
+/* < ------------------------ > */
+/* < ----- About section -----> */
+/* < ------------------------ > */
+.about_us {
+    position: relative;
+    line-height: 1.6;
+    background-image: linear-gradient(
+            to bottom right,
+            rgba(30, 30, 29, 0.88),
+            rgba(69, 68, 67, 0.669)
+        ),
+        url(Image/austin-distel-wD1LRb9OeEo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    background-attachment: fixed;
+}
+.about_info {
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+}
+.vertical_line {
+    width: 90%;
+    margin: auto;
+    border-left: 2px solid #dfdfde;
+    height: 100px;
+}
+.btn_read_more {
+    display: inline-block;
+    margin: 20px 0 0 10px;
+    padding: 15px;
+    cursor: pointer;
+}
+.btn_read_more:hover {
+    color: black;
+    transition: all 0.3s;
+}
+.modal {
+    border: none;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.908);
+    position: relative;
+    transform: translate(0%, 0%);
+    text-align: center;
+    z-index: 100;
+    color: #181818;
+    padding: 5%;
+    box-shadow: 0px 10px 5px black;
+    border-radius: 10px;
+}
+.modal-close {
+    position: absolute;
+    top: 6%;
+    right: 6%;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.modal-close:hover {
+    color: rgba(53, 46, 46, 0.651);
+}
+.hidden {
+    display: none;
+}
+.para {
+    color: #333;
+}
+/* < ----------------------- > */
+/* < ----- Recent Work ----- > */
+/* < ----------------------- > */
+h2 {
+    padding: 40px;
+    text-align: center;
+}
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: #dfdfde;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.recent_work_container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 320px;
+    height: 250px;
+    background-color: #fff;
+    margin: 10px 10px 20px;
+    /* padding: 20px; */
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 4px 30px rgba(124, 123, 123, 0.4);
+    cursor: pointer;
+}
+.project:hover {
+    margin-top: -5px;
+    transition: all 0.3s;
+}
+.calculator,
+.to-do-list {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+/* < ---------------------- > */
+/* < ----- Tech Stack ----- > */
+/* < ---------------------- > */
+.tech_stack {
+    justify-content: center;
+}
+.programming_language_box {
+    height: 100px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    border: none;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(180, 178, 178, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 10);
+    z-index: 1;
+}
+.programming_language_image {
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+}
+.programming_language_box img:hover {
+    margin-top: -5px;
+    transition: all 0.3s;
+}
+/* < ----------------------- > */
+/* < ----- Get in touch -----> */
+/* < ----------------------- > */
+
+.or {
+    text-align: center;
+    padding: 20px 0 80px 0;
+    font-size: 70px;
+}
+.get_in_touch_icon {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.get_in_touch_social {
+    width: 100px;
+    cursor: pointer;
+    box-shadow: 5px 5px 30px rgb(8, 8, 8);
+    border-radius: 200px;
+}
+.get_in_touch_social:hover {
+    padding: 5px;
+    transition: all 0.8s;
+}
+.get_in_touch_email {
+    background-color: #da0037;
+    width: 50%;
+    margin: auto auto 80px auto;
+    color: #fff;
+    padding: 30px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow {
+    margin-left: 10px;
+    font-size: 50px;
+}
+
+.get_in_touch_email:hover,
+.arrow_image:hover {
+    color: #000;
+    transition: all 0.3s;
+}
+
+/* < --------------------- > */
+/* < ------- Fotter ------ > */
+/* < --------------------- > */
+footer {
+    padding: 50px;
+    background-color: rgb(60, 56, 56);
+    align-items: center;
+    text-align: center;
+}
+footer p {
+    color: rgba(116, 114, 114, 0.463);
+}
+.footer {
+    background-color: rgb(60, 56, 56);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.link ul,
+.social ul {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.link ul li,
+.social ul li {
+    margin-left: 15px;
+    list-style: none;
+}
+.link ul li a:hover {
+    color: #181818;
+}
+.social img {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.social ul li a img:hover {
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+/* -------- Modal -------- */
