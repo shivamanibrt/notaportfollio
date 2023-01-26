@@ -218,7 +218,8 @@ h2::after {
     transition: all 0.3s;
 }
 .calculator,
-.to-do-list {
+.to-do-list,
+.wodonga {
     height: 100%;
     width: 100%;
     margin: auto;
