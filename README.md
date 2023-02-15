@@ -1,2 +1,1 @@
-https://shivamanibrt.github.io/portfolio/
-# myportfolio
+https://shivamanibrt.github.io/myportfolio/

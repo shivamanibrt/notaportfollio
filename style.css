@@ -220,7 +220,11 @@ h2::after {
 .calculator,
 .to-do-list,
 .wodonga,
+<<<<<<< HEAD
 .prankCalculator {
+=======
+.prankCalculator{
+>>>>>>> d9026df5d6be84bcf56a5764fc09e29247f6295f
     height: 100%;
     width: 100%;
     margin: auto;
