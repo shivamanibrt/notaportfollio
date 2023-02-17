@@ -220,11 +220,7 @@ h2::after {
 .calculator,
 .to-do-list,
 .wodonga,
-<<<<<<< HEAD
 .prankCalculator {
-=======
-.prankCalculator{
->>>>>>> d9026df5d6be84bcf56a5764fc09e29247f6295f
     height: 100%;
     width: 100%;
     margin: auto;
@@ -301,14 +297,16 @@ h2::after {
     align-items: center;
     cursor: pointer;
 }
+.arrow-mail {
+    color: #fff;
+}
 
 .arrow {
     margin-left: 10px;
     font-size: 50px;
 }
 
-.get_in_touch_email:hover,
-.arrow_image:hover {
+.arrow-mail:hover {
     color: #000;
     transition: all 0.3s;
 }
