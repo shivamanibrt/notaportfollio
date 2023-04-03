@@ -353,7 +353,7 @@ footer p {
 }
 .social ul li a img:hover {
     padding: 5px;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 /* -------- Modal -------- */
